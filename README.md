@@ -20,10 +20,12 @@ This project demonstrates a DevOps-style monitoring setup using a Flask applicat
 ## 📸 Screenshots
 
 ### 🔷 Frontend UI
-![Frontend](screenshots/frontend.png)
+<img width="577" alt="Screenshot 2025-04-16 at 10 14 03 AM" src="https://github.com/user-attachments/assets/465dd49f-62be-4e8b-90fa-86f6b582fa42" />
+
 
 ### 📈 Grafana Monitoring Dashboard
-![Grafana](screenshots/grafana.png)
+
+<img width="581" alt="Screenshot 2025-04-16 at 10 14 13 AM" src="https://github.com/user-attachments/assets/180f20a1-85d9-4330-babe-f3ff0e2107a0" />
 
 ---
 
