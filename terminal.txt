@@ -1,0 +1,27 @@
+# Clean start and re-apply Flask app
+pkill -f "python3 app/app.py"
+rm -rf app/
+terraform apply
+
+# Kill process manually (when port 5002 was stuck)
+lsof -i :5002
+kill -9 16216
+
+# Run app manually if Terraform didn’t restart it
+cd app/
+python3 app.py
+
+# Push to GitHub
+git init
+git add .
+git commit -m "Initial commit"
+git remote add origin https://github.com/Rounakchadha/monitored-flask-app.git
+git branch -M main
+git push -u origin main
+
+# Install dependencies
+pip install -r requirements.txt
+
+# View metrics in browser or test manually
+open http://localhost:5001
+curl http://localhost:5001/metrics
